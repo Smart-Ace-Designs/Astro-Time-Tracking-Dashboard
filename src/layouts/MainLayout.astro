@@ -1,0 +1,28 @@
+---
+import "@/styles/styles.css";
+
+interface Props {
+  title?: string;
+}
+const { title = "Astro" } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon-32x32.png" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <style>
+      @view-transition {
+        navigation: auto; /* View Transitions */
+      }
+    </style>
+  </head>
+  <body class="font-rubik bg-sad-very-dark-blue text-lg text-white">
+    <main class="flex min-h-screen items-center justify-center">
+      <slot />
+    </main>
+  </body>
+</html>

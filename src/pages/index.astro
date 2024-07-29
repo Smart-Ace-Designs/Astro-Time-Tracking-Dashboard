@@ -1,0 +1,37 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import TimeCard from "@/components/TimeCard.astro";
+---
+
+<MainLayout title="Frontend Mentor | Time Tracking Dashboard">
+  <article class="grid grid-cols-1 gap-6">
+    <TimeCard
+      backgroundColor="bg-sad-peach"
+      image="icon-work"
+      title="Work"
+      time="32"
+      previousTime="36"
+    />
+    <TimeCard
+      backgroundColor="bg-sad-soft-blue"
+      image="icon-play"
+      title="Play"
+      time="10"
+      previousTime="8"
+    />
+    <TimeCard
+      backgroundColor="bg-sad-light-red"
+      image="icon-study"
+      title="Study"
+      time="4"
+      previousTime="7"
+    />
+    <TimeCard
+      backgroundColor="bg-sad-lime-green"
+      image="icon-exercise"
+      title="Exercise"
+      time="4"
+      previousTime="5"
+    />
+  </article>
+</MainLayout>
