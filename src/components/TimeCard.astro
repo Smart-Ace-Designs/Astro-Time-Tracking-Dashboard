@@ -16,18 +16,14 @@ const { backgroundColor, image, title, time, previousTime } = Astro.props;
     "relative h-[10rem] w-[20.5rem] overflow-hidden rounded-2xl",
   ]}
 >
-  <img
-    src=`/src/assets/${image}.svg`
-    alt="Work"
-    class="absolute -top-2 right-5"
-  />
+  <img src=`/src/assets/${image}` alt="Work" class="absolute -top-2 right-5" />
   <div
-    class="bg-sad-dark-blue absolute bottom-0 h-[7.5rem] w-[20.5rem] rounded-2xl p-8"
+    class="absolute bottom-0 h-[7.5rem] w-[20.5rem] rounded-2xl bg-sad-dark-blue p-8"
   >
     <h2>{title}</h2>
     <div class="flex items-center justify-between">
       <p class="text-3xl font-light">{time}hrs</p>
-      <p class="text-sad-pale-blue text-sm">Last Week - {previousTime} hrs</p>
+      <p class="text-sm text-sad-pale-blue">Last Week - {previousTime} hrs</p>
     </div>
   </div>
 </section>

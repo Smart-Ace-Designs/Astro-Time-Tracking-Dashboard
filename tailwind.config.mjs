@@ -16,7 +16,7 @@ export default {
         // Neutral
         "sad-very-dark-blue": "hsl(226, 43%, 10%)",
         "sad-dark-blue": "hsl(235, 46%, 20%)",
-        "sad=desaturated-blue": "hsl(235, 45%, 61%)",
+        "sad-desaturated-blue": "hsl(235, 45%, 61%)",
         "sad-pale-blue": "hsl(236, 100%, 87%)",
       },
       fontFamily: {
