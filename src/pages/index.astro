@@ -7,7 +7,7 @@ import data from "@/assets/data.json";
 ---
 
 <MainLayout title="Frontend Mentor | Time Tracking Dashboard">
-  <article class="my-20 grid grid-cols-1 gap-6">
+  <article class="my-20 grid grid-cols-1 gap-6 md:grid-cols-4">
     <ProfileCard employeeName="Jeremy Robson" avatar="image-jeremy.png" />
     {data.map((item) => <TimeCard timeRecord={item} />)}
   </article>
