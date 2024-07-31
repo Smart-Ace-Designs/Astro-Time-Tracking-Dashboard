@@ -1,13 +1,45 @@
 ---
 interface Props {
-  backgroundColor: string;
-  image: string;
-  title: string;
-  time: string;
-  previousTime: string;
+  timeRecord: {
+    title: string;
+    timeframes: {
+      daily: {
+        current: number;
+        previous: number;
+      };
+      weekly: {
+        current: number;
+        previous: number;
+      };
+      monthly: {
+        current: number;
+        previous: number;
+      };
+    };
+  };
 }
 
-const { backgroundColor, image, title, time, previousTime } = Astro.props;
+const { timeRecord } = Astro.props;
+
+const colorLookup: { [key: string]: string } = {
+  Work: "bg-sad-peach",
+  Play: "bg-sad-soft-blue",
+  Study: "bg-sad-light-red",
+  Exercise: "bg-sad-lime-green",
+  Social: "bg-sad-violet",
+  "Self Care": "bg-sad-soft-orange",
+};
+const backgroundColor = colorLookup[timeRecord.title];
+
+const imageLookup: { [key: string]: string } = {
+  Work: "icon-work.svg",
+  Play: "icon-play.svg",
+  Study: "icon-study.svg",
+  Exercise: "icon-exercise.svg",
+  Social: "icon-social.svg",
+  "Self Care": "icon-self-care.svg",
+};
+const image = imageLookup[timeRecord.title];
 ---
 
 <section
@@ -16,14 +48,22 @@ const { backgroundColor, image, title, time, previousTime } = Astro.props;
     "relative h-[10rem] w-[20.5rem] overflow-hidden rounded-2xl",
   ]}
 >
-  <img src=`/src/assets/${image}` alt="Work" class="absolute -top-2 right-5" />
+  <img
+    src=`/src/assets/${image}`
+    alt="Activity"
+    class="absolute -top-2 right-5"
+  />
   <div
     class="absolute bottom-0 h-[7.5rem] w-[20.5rem] rounded-2xl bg-sad-dark-blue p-8"
   >
-    <h2>{title}</h2>
+    <h2>{timeRecord.title}</h2>
     <div class="flex items-center justify-between">
-      <p class="text-3xl font-light">{time}hrs</p>
-      <p class="text-sm text-sad-pale-blue">Last Week - {previousTime} hrs</p>
+      <p class="text-3xl font-light">
+        {timeRecord.timeframes.weekly.current}hrs
+      </p>
+      <p class="text-sm text-sad-pale-blue">
+        Last Week - {timeRecord.timeframes.weekly.previous} hrs
+      </p>
     </div>
   </div>
 </section>
