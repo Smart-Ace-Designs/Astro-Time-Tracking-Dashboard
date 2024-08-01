@@ -8,28 +8,30 @@ const { employeeName, avatar } = Astro.props;
 ---
 
 <section
-  class="h-[12.5rem] w-[20.5rem] overflow-hidden rounded-2xl bg-sad-dark-blue md:row-span-2 md:h-[32rem] md:w-[16rem]"
+  class="h-[12.5rem] w-[20.5rem] rounded-2xl bg-sad-dark-blue md:row-span-2 md:h-[32rem] md:w-[16rem]"
 >
   <div
-    class="flex h-[8.2rem] w-[20.5rem] items-center justify-evenly rounded-2xl bg-sad-blue px-2 py-3 md:h-[22rem] md:flex-col md:items-start md:px-8"
+    class="flex h-[8.2rem] w-[20.5rem] items-center justify-evenly rounded-2xl bg-sad-blue px-2 py-3 md:h-[22rem] md:w-[16rem] md:flex-col md:items-start md:px-8"
   >
     <img
       src=`/src/assets/${avatar}`
       alt="Work"
-      class="h-[4.5rem] w-[4.5rem] rounded-full border-[3px] border-white md:h-[5.5rem] md:w-[5.5rem]"
+      class="h-[4.5rem] w-[4.5rem] rounded-full border-[3px] border-white md:h-[5.4rem] md:w-[5.4rem]"
     />
     <div class="flex flex-col">
       <h2 class="text-[0.9rem] font-normal text-sad-pale-blue">Report for</h2>
       <h1
-        class="text-[1.45rem] font-light text-white md:text-[2.35rem] md:font-light"
+        class="text-[1.45rem] font-light text-white md:text-[2.35rem] md:font-light md:leading-tight"
       >
         {employeeName}
       </h1>
     </div>
   </div>
-  <div class="mt-5 flex items-center justify-around">
-    <p class="font-light text-sad-pale-blue">Daily</p>
-    <p class="text-sad=desaturated-blue font-light">Weekly</p>
-    <p class="font-light text-sad-pale-blue">Monthly</p>
-  </div>
+  <ul
+    class="mt-5 flex items-center justify-around md:ml-8 md:flex-col md:items-start md:gap-4"
+  >
+    <li class="font-light text-sad-pale-blue">Daily</li>
+    <li class="text-sad=desaturated-blue font-light">Weekly</li>
+    <li class="font-light text-sad-pale-blue">Monthly</li>
+  </ul>
 </section>
