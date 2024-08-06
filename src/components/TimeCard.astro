@@ -45,7 +45,7 @@ const image = imageLookup[timeRecord.title];
 <section
   class:list={[
     backgroundColor,
-    "relative h-[10rem] w-[20.5rem] overflow-hidden rounded-2xl",
+    "relative h-[10rem] w-[20.5rem] overflow-hidden rounded-2xl lg:h-[15.25rem] lg:w-[16rem]",
   ]}
 >
   <img
@@ -54,11 +54,11 @@ const image = imageLookup[timeRecord.title];
     class="absolute -top-2 right-5"
   />
   <div
-    class="absolute bottom-0 h-[7.5rem] w-[20.5rem] rounded-2xl bg-sad-dark-blue p-8"
+    class="absolute bottom-0 h-[7.5rem] w-[20.5rem] rounded-2xl bg-sad-dark-blue p-8 lg:h-[12rem] lg:w-[16rem]"
   >
     <h2>{timeRecord.title}</h2>
-    <div class="flex items-center justify-between">
-      <p class="text-3xl font-light">
+    <div class="flex items-center justify-between lg:flex-col lg:items-start">
+      <p class="text-3xl font-light lg:text-6xl">
         {timeRecord.timeframes.weekly.current}hrs
       </p>
       <p class="text-sm text-sad-pale-blue">

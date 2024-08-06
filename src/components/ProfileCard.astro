@@ -8,27 +8,27 @@ const { employeeName, avatar } = Astro.props;
 ---
 
 <section
-  class="h-[12.5rem] w-[20.5rem] rounded-2xl bg-sad-dark-blue md:row-span-2 md:h-[32rem] md:w-[16rem]"
+  class="h-[12.5rem] w-[20.5rem] rounded-2xl bg-sad-dark-blue lg:row-span-2 lg:h-[32rem] lg:w-[16rem]"
 >
   <div
-    class="flex h-[8.2rem] w-[20.5rem] items-center justify-evenly rounded-2xl bg-sad-blue px-2 py-3 md:h-[22rem] md:w-[16rem] md:flex-col md:items-start md:px-8"
+    class="flex h-[8.2rem] w-[20.5rem] items-center justify-evenly rounded-2xl bg-sad-blue px-2 py-3 lg:h-[22rem] lg:w-[16rem] lg:flex-col lg:items-start lg:px-8"
   >
     <img
       src=`/src/assets/${avatar}`
       alt="Work"
-      class="h-[4.5rem] w-[4.5rem] rounded-full border-[3px] border-white md:h-[5.4rem] md:w-[5.4rem]"
+      class="h-[4.5rem] w-[4.5rem] rounded-full border-[3px] border-white lg:h-[5.4rem] lg:w-[5.4rem]"
     />
     <div class="flex flex-col">
       <h2 class="text-[0.9rem] font-normal text-sad-pale-blue">Report for</h2>
       <h1
-        class="text-[1.45rem] font-light text-white md:text-[2.35rem] md:font-light md:leading-tight"
+        class="text-[1.45rem] font-light text-white lg:text-[2.35rem] lg:font-light lg:leading-tight"
       >
         {employeeName}
       </h1>
     </div>
   </div>
   <ul
-    class="mt-5 flex items-center justify-around md:ml-8 md:flex-col md:items-start md:gap-4"
+    class="mt-5 flex items-center justify-around lg:ml-8 lg:flex-col lg:items-start lg:gap-4"
   >
     <li class="font-light text-sad-pale-blue">Daily</li>
     <li class="text-sad=desaturated-blue font-light">Weekly</li>
