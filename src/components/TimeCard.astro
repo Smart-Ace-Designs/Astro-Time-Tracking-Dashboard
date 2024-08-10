@@ -56,7 +56,18 @@ const image = imageLookup[timeRecord.title];
   <div
     class="absolute bottom-0 h-[7.5rem] w-[20.5rem] rounded-2xl bg-sad-dark-blue p-8 lg:h-[12rem] lg:w-[16rem]"
   >
-    <h2>{timeRecord.title}</h2>
+    <!-- <div class="flex items-center justify-between">
+      <h2>{timeRecord.title}</h2>
+      <div class="flex items-center justify-center text-sad-pale-blue">
+        <div>•</div>
+        <div>•</div>
+        <div>•</div>
+      </div>
+    </div> -->
+    <div class="flex items-center justify-between">
+      <h2>{timeRecord.title}</h2>
+      <p>&#x2022;&#x2022;&#x2022;</p>
+    </div>
     <div class="flex items-center justify-between lg:flex-col lg:items-start">
       <p class="text-3xl font-light lg:text-6xl">
         {timeRecord.timeframes.weekly.current}hrs
