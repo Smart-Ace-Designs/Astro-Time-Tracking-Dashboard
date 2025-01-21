@@ -1,14 +1,14 @@
 ---
 import MainLayout from "@/layouts/MainLayout.astro";
-import ProfileCard from "@/components/ProfileCard.astro";
-import TimeCard from "@/components/TimeCard.astro";
+import TimeSheet from "@/components/TimeSheet.vue";
+import { GET } from "@/pages/api/entries.json";
 
-import data from "@/assets/data.json";
+import type { TimeEntry } from "@/models/timeentry.model";
+
+let response = await GET(Astro);
+const activities: TimeEntry[] = await response.json();
 ---
 
 <MainLayout title="Frontend Mentor | Time Tracking Dashboard">
-  <article class="my-20 grid grid-cols-1 gap-6 lg:grid-cols-4">
-    <ProfileCard employeeName="Jeremy Robson" avatar="image-jeremy.png" />
-    {data.map((item) => <TimeCard timeRecord={item} />)}
-  </article>
+  <TimeSheet activities={activities} client:load />
 </MainLayout>
