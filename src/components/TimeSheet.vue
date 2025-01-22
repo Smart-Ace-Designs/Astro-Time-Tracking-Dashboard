@@ -12,28 +12,36 @@ const timeframe = ref<"daily" | "weekly" | "monthly">("weekly");
 
 <template>
   <div
-    class="item mx-auto grid max-w-[1400px] gap-4 p-36 md:grid-cols-3 md:gap-7 lg:grid-cols-4"
+    class="mx-auto grid gap-4 px-20 py-20 md:grid-cols-2 md:gap-7 md:px-32 lg:max-w-[1400px] lg:grid-cols-4 lg:px-36"
   >
     <section
-      class="rounded-2xl bg-secondaryDarkBlue md:row-span-3 lg:row-span-2"
+      class="min-w-64 rounded-2xl bg-secondaryDarkBlue md:col-span-2 md:row-span-1 md:min-w-0 lg:col-span-1 lg:row-span-2"
     >
-      <div class="rounded-2xl bg-primaryBlue p-8 pb-20">
+      <div
+        class="flex flex-row items-center gap-4 rounded-2xl bg-primaryBlue p-8 lg:flex-col lg:items-start lg:p-8 lg:pb-12"
+      >
         <img
           src="image-jeremy.png"
           alt="Avatar"
           width="80"
-          class="mb-9 rounded-full border-2 border-white"
+          class="rounded-full border-2 border-white lg:mb-9"
         />
-        <h1>
-          <span class="text-base text-secondaryPaleBlue">Report for</span>
-          <span class="mb-3 mt-3 block text-[2.5rem] font-light text-white"
-            >Jeremy</span
-          >
-          <span class="text-[2.5rem] font-light text-white"> Robson</span>
-        </h1>
+        <div class="flex flex-col">
+          <h1>
+            <span class="text-base text-secondaryPaleBlue">Report for</span>
+          </h1>
+          <div>
+            <span
+              class="font-light text-white lg:my-3 lg:inline-block lg:text-[2.5rem]"
+              >Jeremy</span
+            >
+            <span class="font-light text-white lg:text-[2.5rem]"> Robson</span>
+          </div>
+        </div>
       </div>
+
       <nav>
-        <ul class="flex flex-row justify-between gap-y-3 p-8 md:flex-col">
+        <ul class="flex flex-row justify-between gap-y-3 p-8 lg:flex-col">
           <li
             id="daily"
             class="text-secondaryPaleBlue hover:cursor-pointer"

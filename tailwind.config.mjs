@@ -11,6 +11,12 @@ export default {
   ],
   theme: {
     extend: {
+      screens: {
+        sm: "640px", // default value
+        md: "800px", // wider medium breakpoint
+        lg: "1200px", // adjusted large breakpoint
+        xl: "1280px", // default value
+      },
       fontFamily: {
         rubik: ["Rubik", "sans-serif"],
       },
