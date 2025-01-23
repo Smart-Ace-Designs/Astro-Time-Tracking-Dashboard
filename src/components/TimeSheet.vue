@@ -11,7 +11,7 @@ const timeframe = ref<"daily" | "weekly" | "monthly">("weekly");
 </script>
 
 <template>
-  <div class="lg:flex lg:min-h-screen lg:items-center lg:justify-center">
+  <main class="lg:flex lg:min-h-screen lg:items-center lg:justify-center">
     <div
       class="mx-auto grid gap-4 px-20 py-20 md:grid-cols-2 md:gap-7 md:px-32 lg:max-w-[1400px] lg:grid-cols-4 lg:px-36"
     >
@@ -81,5 +81,5 @@ const timeframe = ref<"daily" | "weekly" | "monthly">("weekly");
         :key="activity.title"
       />
     </div>
-  </div>
+  </main>
 </template>
