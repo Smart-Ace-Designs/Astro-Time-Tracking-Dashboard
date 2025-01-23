@@ -23,8 +23,7 @@ Users should be able to:
 - Switch between viewing Daily, Weekly, and Monthly stats
 
 ### Screenshot
-
-Coming soon...
+![astro-ttd](https://github.com/user-attachments/assets/c9161984-48c9-4d4d-9f4b-bab15ee9b0a6)
 
 ### Links
 
