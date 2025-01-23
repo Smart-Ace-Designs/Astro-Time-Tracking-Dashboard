@@ -24,25 +24,27 @@ Users should be able to:
 
 ### Screenshot
 
+Coming soon...
+
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [GitHub](https://github.com/Smart-Ace-Designs/Astro-Time-Tracking-Dashboard)
+- Live Site URL: [Netlify](https://smartacedesigns-astro-ttd.netlify.app/)
 
 ## My process
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
+- Astro
+- Astro [Space](https://github.com/Smart-Ace-Designs/Astro-Space) Template
+- Tailwind CSS
 - CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- Flexbox
+- Bun
+- MongoDB
+- Vue.js (Astro Islands)
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Website - [Smart Ace Designs (GitHub)](https://github.com/Smart-Ace-Designs)
+- Frontend Mentor - [@smart-ace-designs](https://www.frontendmentor.io/profile/Smart-Ace-Designs)
