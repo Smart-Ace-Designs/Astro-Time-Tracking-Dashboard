@@ -7,7 +7,7 @@ class TimeEntryController {
     if (result) {
       return result;
     } else {
-      throw new Error("No jobs found.");
+      throw new Error("No time entries found.");
     }
   }
 }
