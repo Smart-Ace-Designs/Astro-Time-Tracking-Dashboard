@@ -48,7 +48,7 @@ const timeframe = ref<"daily" | "weekly" | "monthly">("weekly");
           >
             <li
               id="daily"
-              class="text-secondaryPaleBlue hover:cursor-pointer"
+              class="text-secondaryPaleBlue hover:cursor-pointer hover:text-white"
               :class="{ '!text-white': timeframe === 'daily' }"
               @click="timeframe = 'daily'"
             >
@@ -56,7 +56,7 @@ const timeframe = ref<"daily" | "weekly" | "monthly">("weekly");
             </li>
             <li
               id="weekly"
-              class="text-secondaryPaleBlue hover:cursor-pointer"
+              class="text-secondaryPaleBlue hover:cursor-pointer hover:text-white"
               :class="{ '!text-white': timeframe === 'weekly' }"
               @click="timeframe = 'weekly'"
             >
@@ -64,7 +64,7 @@ const timeframe = ref<"daily" | "weekly" | "monthly">("weekly");
             </li>
             <li
               id="monthly"
-              class="text-secondaryPaleBlue hover:cursor-pointer"
+              class="text-secondaryPaleBlue hover:cursor-pointer hover:text-white"
               :class="{ '!text-white': timeframe === 'monthly' }"
               @click="timeframe = 'monthly'"
             >

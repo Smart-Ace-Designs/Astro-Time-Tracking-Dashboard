@@ -34,7 +34,7 @@ const previousTimeframeLabel = computed(() => {
       />
     </div>
     <div
-      class="absolute bottom-0 h-[85%] w-full rounded-2xl bg-secondaryDarkBlue"
+      class="hover:bg-secondaryHoverBlue absolute bottom-0 h-[85%] w-full rounded-2xl bg-secondaryDarkBlue"
     >
       <div
         class="flex items-center justify-between px-8 pb-2 pt-8 lg:px-8 lg:pb-6 lg:pt-8"

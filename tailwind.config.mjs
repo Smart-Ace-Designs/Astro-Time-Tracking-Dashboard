@@ -31,6 +31,7 @@ export default {
 
         secondaryVeryDarkBlue: "hsl(226, 43%, 10%)",
         secondaryDarkBlue: "hsl(235, 46%, 20%)",
+        secondaryHoverBlue: "hsl(235, 46%, 35%)",
         secondaryDesaturatedBlue: "hsl(235, 45%, 61%)",
         secondaryPaleBlue: "hsl(236, 100%, 87%)",
       },
