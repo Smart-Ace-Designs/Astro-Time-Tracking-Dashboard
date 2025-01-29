@@ -34,7 +34,7 @@ const previousTimeframeLabel = computed(() => {
       />
     </div>
     <div
-      class="hover:bg-secondaryHoverBlue absolute bottom-0 h-[85%] w-full rounded-2xl bg-secondaryDarkBlue"
+      class="bg-theme-dark-blue hover:bg-theme-hover-blue absolute bottom-0 h-[85%] w-full rounded-2xl"
     >
       <div
         class="flex items-center justify-between px-8 pb-2 pt-8 lg:px-8 lg:pb-6 lg:pt-8"
@@ -52,7 +52,7 @@ const previousTimeframeLabel = computed(() => {
         <p class="text-3xl text-white md:text-5xl lg:mb-2">
           {{ currentData.current }}hrs
         </p>
-        <p class="text-base text-secondaryPaleBlue">
+        <p class="text-theme-pale-blue text-base">
           {{ previousTimeframeLabel }} - {{ currentData.previous }}hrs
         </p>
       </div>

@@ -16,10 +16,10 @@ const timeframe = ref<"daily" | "weekly" | "monthly">("weekly");
       class="mx-auto grid gap-4 px-20 py-20 md:grid-cols-2 md:gap-7 md:px-32 lg:max-w-[1400px] lg:grid-cols-4 lg:px-36"
     >
       <section
-        class="min-w-64 rounded-2xl bg-secondaryDarkBlue md:col-span-2 md:row-span-1 md:min-w-0 lg:col-span-1 lg:row-span-2"
+        class="bg-theme-dark-blue min-w-64 rounded-2xl md:col-span-2 md:row-span-1 md:min-w-0 lg:col-span-1 lg:row-span-2"
       >
         <div
-          class="flex flex-row items-center gap-4 rounded-2xl bg-primaryBlue p-7 lg:flex-col lg:items-start lg:p-8 lg:pb-12"
+          class="bg-theme-blue flex flex-row items-center gap-4 rounded-2xl p-7 lg:flex-col lg:items-start lg:p-8 lg:pb-12"
         >
           <img
             src="image-jeremy.png"
@@ -29,7 +29,7 @@ const timeframe = ref<"daily" | "weekly" | "monthly">("weekly");
           />
           <div class="flex flex-col">
             <h1>
-              <span class="text-base text-secondaryPaleBlue">Report for</span>
+              <span class="text-theme-pale-blue text-base">Report for</span>
             </h1>
             <div>
               <span
@@ -48,7 +48,7 @@ const timeframe = ref<"daily" | "weekly" | "monthly">("weekly");
           >
             <li
               id="daily"
-              class="text-secondaryPaleBlue hover:cursor-pointer hover:text-white"
+              class="text-theme-pale-blue hover:cursor-pointer hover:text-white"
               :class="{ '!text-white': timeframe === 'daily' }"
               @click="timeframe = 'daily'"
             >
@@ -56,7 +56,7 @@ const timeframe = ref<"daily" | "weekly" | "monthly">("weekly");
             </li>
             <li
               id="weekly"
-              class="text-secondaryPaleBlue hover:cursor-pointer hover:text-white"
+              class="text-theme-pale-blue hover:cursor-pointer hover:text-white"
               :class="{ '!text-white': timeframe === 'weekly' }"
               @click="timeframe = 'weekly'"
             >
@@ -64,7 +64,7 @@ const timeframe = ref<"daily" | "weekly" | "monthly">("weekly");
             </li>
             <li
               id="monthly"
-              class="text-secondaryPaleBlue hover:cursor-pointer hover:text-white"
+              class="text-theme-pale-blue hover:cursor-pointer hover:text-white"
               :class="{ '!text-white': timeframe === 'monthly' }"
               @click="timeframe = 'monthly'"
             >
