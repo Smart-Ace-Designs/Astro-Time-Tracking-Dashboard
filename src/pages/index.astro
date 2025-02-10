@@ -7,6 +7,11 @@ import type { TimeEntry } from "@/models/timeentry.model";
 
 let response = await GET(Astro);
 const activities: TimeEntry[] = await response.json();
+
+const cardOrder = ["Work", "Play", "Study", "Exercise", "Social", "Self Care"];
+activities.sort(
+  (a, b) => cardOrder.indexOf(a.title) - cardOrder.indexOf(b.title),
+);
 ---
 
 <MainLayout title="Frontend Mentor | Time Tracking Dashboard">

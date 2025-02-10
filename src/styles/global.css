@@ -1,6 +1,36 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --color-theme-blue: hsl(246, 80%, 60%);
+  --color-theme-soft-orange: hsl(15, 100%, 70%);
+  --color-theme-soft-blue: hsl(195, 74%, 62%);
+  --color-theme-light-red: hsl(348, 100%, 68%);
+  --color-theme-lime-green: hsl(145, 58%, 55%);
+  --color-theme-primary-violet: hsl(264, 64%, 52%);
+  --color-theme-light-yellow: hsl(43, 84%, 65%);
+
+  --color-theme-very-dark-blue: hsl(226, 43%, 10%);
+  --color-theme-dark-blue: hsl(235, 46%, 20%);
+  --color-theme-hover-blue: hsl(235, 46%, 35%);
+  --color-theme-desaturated-blue: hsl(235, 45%, 61%);
+  --color-theme-pale-blue: hsl(236, 100%, 87%);
+
+  --breakpoint-md: 50rem;
+  --breakpoint-lg: 75rem;
+  --breakpoint-xl: 80rem;
+
+  --font-rubik: "Rubik", "sans-serif";
+}
+
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
 
 @font-face {
   font-family: "Rubik";

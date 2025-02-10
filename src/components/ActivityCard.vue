@@ -22,10 +22,18 @@ const previousTimeframeLabel = computed(() => {
       return "Last Month";
   }
 });
+
+// Tailwind CSS SafeList
+// "bg-theme-soft-orange"
+// "bg-theme-soft-blue"
+// "bg-theme-light-red"
+// "bg-theme-lime-green"
+// "bg-theme-primary-violet"
+// "bg-theme-light-yellow"
 </script>
 
 <template>
-  <article class="relative h-40 overflow-clip rounded-2xl md:h-60">
+  <article class="relative h-40 overflow-clip rounded-2xl md:h-64">
     <div :class="['h-1/2 rounded-t-2xl', data.color]">
       <img
         :src="data.image"
@@ -37,7 +45,7 @@ const previousTimeframeLabel = computed(() => {
       class="bg-theme-dark-blue hover:bg-theme-hover-blue absolute bottom-0 h-[85%] w-full rounded-2xl"
     >
       <div
-        class="flex items-center justify-between px-8 pb-2 pt-8 lg:px-8 lg:pb-6 lg:pt-8"
+        class="flex items-center justify-between px-8 pt-8 pb-2 lg:px-8 lg:pt-8 lg:pb-6"
       >
         <h2 class="font-medium">{{ data.title }}</h2>
         <img

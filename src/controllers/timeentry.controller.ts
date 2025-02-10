@@ -1,5 +1,4 @@
 import { timeEntriesCollection } from "@/models/db";
-import { ObjectId } from "mongodb";
 
 class TimeEntryController {
   public async getTimeEntries() {
