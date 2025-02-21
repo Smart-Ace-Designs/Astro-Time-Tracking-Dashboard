@@ -22,14 +22,6 @@ const previousTimeframeLabel = computed(() => {
       return "Last Month";
   }
 });
-
-// Tailwind CSS SafeList
-// "bg-theme-soft-orange"
-// "bg-theme-soft-blue"
-// "bg-theme-light-red"
-// "bg-theme-lime-green"
-// "bg-theme-primary-violet"
-// "bg-theme-light-yellow"
 </script>
 
 <template>
