@@ -1,5 +1,5 @@
 @import "tailwindcss";
-@source inline("bg-theme-soft-orange, bg-theme-soft-blue, bg-theme-light-red, bg-theme-lime-green, bg-theme-primary-violet, bg-theme-light-yellow");
+@source inline("bg-theme-soft-orange bg-theme-soft-blue bg-theme-light-red bg-theme-lime-green bg-theme-primary-violet bg-theme-light-yellow");
 
 @theme {
   --color-theme-blue: hsl(246, 80%, 60%);
