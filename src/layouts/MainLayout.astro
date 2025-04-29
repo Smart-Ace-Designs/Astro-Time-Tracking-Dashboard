@@ -4,8 +4,9 @@ import { ClientRouter } from "astro:transitions";
 
 interface Props {
   title?: string;
+  description?: string;
 }
-const { title = "Astro" } = Astro.props;
+const { title = "Astro", description = "An Astro website." } = Astro.props;
 ---
 
 <html lang="en">
@@ -14,6 +15,7 @@ const { title = "Astro" } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/favicon-32x32.png" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
+    <meta name="description" content={description} />
     <title>{title}</title>
     <ClientRouter />
   </head>
