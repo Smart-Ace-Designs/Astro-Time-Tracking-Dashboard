@@ -11,10 +11,10 @@
   "dependencies": {
     "@astrojs/netlify": "6.3.2",
     "@astrojs/vue": "5.0.13",
-    "@tailwindcss/vite": "^4.1.5",
-    "astro": "5.7.10",
+    "@tailwindcss/vite": "^4.1.6",
+    "astro": "5.7.12",
     "mongodb": "^6.16.0",
-    "tailwindcss": "^4.1.5",
+    "tailwindcss": "^4.1.6",
     "vue": "^3.5.13"
   },
   "devDependencies": {
