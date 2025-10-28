@@ -1,4 +1,8 @@
 @import "tailwindcss";
+
+/* Safelisting required to allow for Tailwind classes that do not existing statically in any code. */
+/* The "prettier-ignore" comment is required to prevent formatting issues when safelist classes are broken onto multiple lines. */
+/* prettier-ignore */
 @source inline("bg-theme-soft-orange bg-theme-soft-blue bg-theme-light-red bg-theme-lime-green bg-theme-primary-violet bg-theme-light-yellow");
 
 @theme {
@@ -21,22 +25,4 @@
   --breakpoint-xl: 80rem;
 
   --font-rubik: "Rubik", "sans-serif";
-}
-
-@layer base {
-  *,
-  ::after,
-  ::before,
-  ::backdrop,
-  ::file-selector-button {
-    border-color: var(--color-gray-200, currentColor);
-  }
-}
-
-@font-face {
-  font-family: "Rubik";
-  font-style: normal;
-  font-weight: 300 500;
-  src: url("/fonts/Roboto-VariableFont_wdth,wght.ttf") format("truetype");
-  font-display: swap;
 }

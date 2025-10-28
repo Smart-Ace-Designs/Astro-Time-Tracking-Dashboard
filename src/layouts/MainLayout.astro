@@ -1,6 +1,7 @@
 ---
 import "@/styles/global.css";
 import { ClientRouter } from "astro:transitions";
+import { Font } from "astro:assets";
 
 interface Props {
   title?: string;
@@ -16,6 +17,7 @@ const { title = "Astro", description = "An Astro website." } = Astro.props;
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={description} />
+    <Font cssVariable="--font-rubik" preload />
     <title>{title}</title>
     <ClientRouter />
   </head>
