@@ -23,7 +23,6 @@ export default defineConfig({
         cssVariable: "--font-rubik",
         weights: [300, 400, 500],
         styles: ["normal"],
-        subsets: ["latin"],
       },
     ],
   },
