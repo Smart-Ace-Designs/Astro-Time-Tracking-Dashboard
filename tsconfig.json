@@ -5,8 +5,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": ["src/*"],
     },
-    "jsx": "preserve"
-  }
+  },
 }
