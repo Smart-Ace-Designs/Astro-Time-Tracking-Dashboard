@@ -13,12 +13,13 @@ const { title = "Astro", description = "An Astro website." } = Astro.props;
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon-32x32.png" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={description} />
-    <Font cssVariable="--font-rubik" preload />
+    <link rel="icon" type="image/svg+xml" href="/favicon-32x32.png" />
     <title>{title}</title>
+
+    <Font cssVariable="--font-rubik" preload />
     <ClientRouter />
   </head>
   <body
