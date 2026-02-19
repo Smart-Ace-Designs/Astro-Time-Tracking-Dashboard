@@ -3,18 +3,23 @@ import { defineConfig, fontProviders } from "astro/config";
 
 import tailwindcss from "@tailwindcss/vite";
 
-import netlify from "@astrojs/netlify";
-
 import vue from "@astrojs/vue";
+
+import node from "@astrojs/node";
 
 // https://astro.build/config
 export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
+
   integrations: [vue()],
+
+  adapter: node({
+    mode: "standalone",
+  }),
   output: "server",
-  adapter: netlify(),
+
   experimental: {
     fonts: [
       {
