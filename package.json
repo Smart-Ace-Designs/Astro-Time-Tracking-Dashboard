@@ -15,10 +15,10 @@
     "@astrojs/node": "^9.5.4",
     "@astrojs/vue": "5.1.4",
     "@tailwindcss/vite": "^4.2.1",
-    "astro": "5.17.3",
+    "astro": "5.18.0",
     "mongodb": "^7.1.0",
     "tailwindcss": "^4.2.1",
-    "vue": "^3.5.28"
+    "vue": "^3.5.29"
   },
   "devDependencies": {
     "prettier": "^3.8.1",
