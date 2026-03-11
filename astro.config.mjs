@@ -12,23 +12,18 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-
   integrations: [vue()],
-
   adapter: node({
     mode: "standalone",
   }),
   output: "server",
-
-  experimental: {
-    fonts: [
-      {
-        provider: fontProviders.google(),
-        name: "Rubik",
-        cssVariable: "--font-rubik",
-        weights: [300, 400, 500],
-        styles: ["normal"],
-      },
-    ],
-  },
+  fonts: [
+    {
+      provider: fontProviders.google(),
+      name: "Rubik",
+      cssVariable: "--font-rubik",
+      weights: [300, 400, 500],
+      styles: ["normal"],
+    },
+  ],
 });
