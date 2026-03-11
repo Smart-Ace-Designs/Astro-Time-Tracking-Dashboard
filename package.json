@@ -12,13 +12,13 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/node": "^9.5.4",
-    "@astrojs/vue": "5.1.4",
+    "@astrojs/node": "10.0.0",
+    "@astrojs/vue": "6.0.0",
     "@tailwindcss/vite": "^4.2.1",
-    "astro": "5.18.0",
+    "astro": "6.0.2",
     "mongodb": "^7.1.0",
     "tailwindcss": "^4.2.1",
-    "vue": "^3.5.29"
+    "vue": "^3.5.30"
   },
   "devDependencies": {
     "prettier": "^3.8.1",
