@@ -15,10 +15,10 @@
     "@astrojs/netlify": "8.2.4",
     "@astrojs/vue": "7.0.2",
     "@tailwindcss/vite": "^4.3.3",
-    "astro": "7.2.7",
+    "astro": "7.2.9",
     "mongodb": "^7.6.0",
     "tailwindcss": "^4.3.3",
-    "vue": "^3.5.41"
+    "vue": "^3.5.42"
   },
   "devDependencies": {
     "prettier": "^3.9.6",
